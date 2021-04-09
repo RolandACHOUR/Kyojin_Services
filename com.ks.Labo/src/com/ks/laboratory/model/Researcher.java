@@ -10,9 +10,7 @@ public class Researcher {
 	private int resAge;
 
 	
-	public Researcher(int id, String resFirstName, String resLastName, int resAge) {
-		
-	}
+
 	public int getId() { return id; }
 	
 	public String getResFirstName() { return resFirstName; }
