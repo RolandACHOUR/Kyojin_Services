@@ -36,6 +36,10 @@ public interface Management {
 	@WebResult(name = "result")
 	Laboratory getLaboratory(@WebParam(name = "id") int id);
 	
+	@WebMethod(operationName = "getResearcher", action = "urn:getResearcher")
+	@WebResult(name = "result")
+	Laboratory getResearcher(@WebParam(name = "id") int id);
+	
 	@WebMethod(operationName = "getAllLaboratory", action = "urn:getAllLaboratory")
 	@WebResult(name = "result")
 	Collection<Laboratory> getAllLaboratory();
