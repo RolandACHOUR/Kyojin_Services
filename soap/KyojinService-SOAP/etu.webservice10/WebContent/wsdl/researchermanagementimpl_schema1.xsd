@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?><xs:schema xmlns:tns="http://service.webservice.edu/" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://service.webservice.edu/" version="1.0">
+<xs:element name="addLaboratory" type="tns:addLaboratory"/>
+<xs:element name="addLaboratoryResponse" type="tns:addLaboratoryResponse"/>
+<xs:element name="addResearcher" type="tns:addResearcher"/>
+<xs:element name="addResearcherResponse" type="tns:addResearcherResponse"/>
+<xs:element name="deleteLaboratory" type="tns:deleteLaboratory"/>
+<xs:element name="deleteLaboratoryResponse" type="tns:deleteLaboratoryResponse"/>
+<xs:element name="deleteResearcher" type="tns:deleteResearcher"/>
+<xs:element name="deleteResearcherResponse" type="tns:deleteResearcherResponse"/>
+<xs:element name="getAllLaboratoryResearcher" type="tns:getAllLaboratoryResearcher"/>
+<xs:element name="getAllLaboratoryResearcherResponse" type="tns:getAllLaboratoryResearcherResponse"/>
+<xs:element name="getAllLaboratorys" type="tns:getAllLaboratorys"/>
+<xs:element name="getAllLaboratorysResponse" type="tns:getAllLaboratorysResponse"/>
+<xs:element name="getAllResearchers" type="tns:getAllResearchers"/>
+<xs:element name="getAllResearchersResponse" type="tns:getAllResearchersResponse"/>
+<xs:element name="getLaboratory" type="tns:getLaboratory"/>
+<xs:element name="getLaboratoryResponse" type="tns:getLaboratoryResponse"/>
+<xs:element name="getResearcher" type="tns:getResearcher"/>
+<xs:element name="getResearcherResponse" type="tns:getResearcherResponse"/>
+<xs:element name="linkLaboratoryResearcher" type="tns:linkLaboratoryResearcher"/>
+<xs:element name="linkLaboratoryResearcherResponse" type="tns:linkLaboratoryResearcherResponse"/>
+<xs:complexType name="addLaboratory">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:laboratory"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="laboratory">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int"/>
+      <xs:element minOccurs="0" name="name" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="addLaboratoryResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="linkLaboratoryResearcher">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+      <xs:element name="arg1" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="linkLaboratoryResearcherResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="getLaboratory">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="getLaboratoryResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:laboratory"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="getAllLaboratorys">
+    <xs:sequence/>
+  </xs:complexType>
+<xs:complexType name="getAllLaboratorysResponse">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="return" type="tns:laboratory"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="addResearcher">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:researcher"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="researcher">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int"/>
+      <xs:element minOccurs="0" name="name" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="addResearcherResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="deleteResearcher">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="deleteResearcherResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="getAllLaboratoryResearcher">
+    <xs:sequence/>
+  </xs:complexType>
+<xs:complexType name="getAllLaboratoryResearcherResponse">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="deleteLaboratory">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="deleteLaboratoryResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="getAllResearchers">
+    <xs:sequence/>
+  </xs:complexType>
+<xs:complexType name="getAllResearchersResponse">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="return" type="tns:researcher"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="getResearcher">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="getResearcherResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:researcher"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

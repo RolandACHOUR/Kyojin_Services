@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="ResearcherManagementImplService" targetNamespace="http://service.webservice.edu/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://service.webservice.edu/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema">
+  <import namespace="http://service.webservice.edu/" schemaLocation="researchermanagementimpl_schema1.xsd"/>
+</schema>
+  </wsdl:types>
+  <wsdl:message name="addLaboratory">
+    <wsdl:part name="parameters" element="tns:addLaboratory">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="linkLaboratoryResearcher">
+    <wsdl:part name="parameters" element="tns:linkLaboratoryResearcher">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getLaboratory">
+    <wsdl:part name="parameters" element="tns:getLaboratory">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getResearcherResponse">
+    <wsdl:part name="parameters" element="tns:getResearcherResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAllLaboratoryResearcherResponse">
+    <wsdl:part name="parameters" element="tns:getAllLaboratoryResearcherResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteLaboratoryResponse">
+    <wsdl:part name="parameters" element="tns:deleteLaboratoryResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addLaboratoryResponse">
+    <wsdl:part name="parameters" element="tns:addLaboratoryResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getLaboratoryResponse">
+    <wsdl:part name="parameters" element="tns:getLaboratoryResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteLaboratory">
+    <wsdl:part name="parameters" element="tns:deleteLaboratory">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAllResearchersResponse">
+    <wsdl:part name="parameters" element="tns:getAllResearchersResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteResearcherResponse">
+    <wsdl:part name="parameters" element="tns:deleteResearcherResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAllLaboratorysResponse">
+    <wsdl:part name="parameters" element="tns:getAllLaboratorysResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAllLaboratorys">
+    <wsdl:part name="parameters" element="tns:getAllLaboratorys">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="linkLaboratoryResearcherResponse">
+    <wsdl:part name="parameters" element="tns:linkLaboratoryResearcherResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addResearcherResponse">
+    <wsdl:part name="parameters" element="tns:addResearcherResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addResearcher">
+    <wsdl:part name="parameters" element="tns:addResearcher">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteResearcher">
+    <wsdl:part name="parameters" element="tns:deleteResearcher">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAllLaboratoryResearcher">
+    <wsdl:part name="parameters" element="tns:getAllLaboratoryResearcher">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAllResearchers">
+    <wsdl:part name="parameters" element="tns:getAllResearchers">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getResearcher">
+    <wsdl:part name="parameters" element="tns:getResearcher">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="ResearcherManagementImpl">
+    <wsdl:operation name="addLaboratory">
+      <wsdl:input name="addLaboratory" message="tns:addLaboratory">
+    </wsdl:input>
+      <wsdl:output name="addLaboratoryResponse" message="tns:addLaboratoryResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="linkLaboratoryResearcher">
+      <wsdl:input name="linkLaboratoryResearcher" message="tns:linkLaboratoryResearcher">
+    </wsdl:input>
+      <wsdl:output name="linkLaboratoryResearcherResponse" message="tns:linkLaboratoryResearcherResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLaboratory">
+      <wsdl:input name="getLaboratory" message="tns:getLaboratory">
+    </wsdl:input>
+      <wsdl:output name="getLaboratoryResponse" message="tns:getLaboratoryResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllLaboratorys">
+      <wsdl:input name="getAllLaboratorys" message="tns:getAllLaboratorys">
+    </wsdl:input>
+      <wsdl:output name="getAllLaboratorysResponse" message="tns:getAllLaboratorysResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addResearcher">
+      <wsdl:input name="addResearcher" message="tns:addResearcher">
+    </wsdl:input>
+      <wsdl:output name="addResearcherResponse" message="tns:addResearcherResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteResearcher">
+      <wsdl:input name="deleteResearcher" message="tns:deleteResearcher">
+    </wsdl:input>
+      <wsdl:output name="deleteResearcherResponse" message="tns:deleteResearcherResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllLaboratoryResearcher">
+      <wsdl:input name="getAllLaboratoryResearcher" message="tns:getAllLaboratoryResearcher">
+    </wsdl:input>
+      <wsdl:output name="getAllLaboratoryResearcherResponse" message="tns:getAllLaboratoryResearcherResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteLaboratory">
+      <wsdl:input name="deleteLaboratory" message="tns:deleteLaboratory">
+    </wsdl:input>
+      <wsdl:output name="deleteLaboratoryResponse" message="tns:deleteLaboratoryResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllResearchers">
+      <wsdl:input name="getAllResearchers" message="tns:getAllResearchers">
+    </wsdl:input>
+      <wsdl:output name="getAllResearchersResponse" message="tns:getAllResearchersResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getResearcher">
+      <wsdl:input name="getResearcher" message="tns:getResearcher">
+    </wsdl:input>
+      <wsdl:output name="getResearcherResponse" message="tns:getResearcherResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ResearcherManagementImplServiceSoapBinding" type="tns:ResearcherManagementImpl">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="addLaboratory">
+      <soap:operation soapAction="urn:AddLaboratory" style="document"/>
+      <wsdl:input name="addLaboratory">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addLaboratoryResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="linkLaboratoryResearcher">
+      <soap:operation soapAction="urn:LinkLaboratoryResearcher" style="document"/>
+      <wsdl:input name="linkLaboratoryResearcher">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="linkLaboratoryResearcherResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLaboratory">
+      <soap:operation soapAction="urn:GetLaboratory" style="document"/>
+      <wsdl:input name="getLaboratory">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getLaboratoryResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllLaboratorys">
+      <soap:operation soapAction="urn:GetAllLaboratorys" style="document"/>
+      <wsdl:input name="getAllLaboratorys">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAllLaboratorysResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addResearcher">
+      <soap:operation soapAction="urn:AddResearcher" style="document"/>
+      <wsdl:input name="addResearcher">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addResearcherResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteResearcher">
+      <soap:operation soapAction="urn:DeleteResearcher" style="document"/>
+      <wsdl:input name="deleteResearcher">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteResearcherResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllLaboratoryResearcher">
+      <soap:operation soapAction="urn:GetAllLaboratoryResearcher" style="document"/>
+      <wsdl:input name="getAllLaboratoryResearcher">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAllLaboratoryResearcherResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteLaboratory">
+      <soap:operation soapAction="urn:DeleteLaboratory" style="document"/>
+      <wsdl:input name="deleteLaboratory">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteLaboratoryResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllResearchers">
+      <soap:operation soapAction="urn:GetAllResearchers" style="document"/>
+      <wsdl:input name="getAllResearchers">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAllResearchersResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getResearcher">
+      <soap:operation soapAction="urn:GetResearcher" style="document"/>
+      <wsdl:input name="getResearcher">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getResearcherResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ResearcherManagementImplService">
+    <wsdl:port name="ResearcherManagementImplPort" binding="tns:ResearcherManagementImplServiceSoapBinding">
+      <soap:address location="http://localhost:8080/etu.webservice10/services/ResearcherManagementImplPort"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
