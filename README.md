@@ -9,8 +9,8 @@ ACHOUR Roland : rolandachour@yahoo.fr
 CLIPET Julien : julien.clipet@outlook.fr
 
 This project gather two web services :
-- a SOAP api based on Jax-WS
-- a REST api based on Jax-RS
+- a SOAP api based on Jax-WS (*soap* folder)
+- a REST api based on Jax-RS (*rest* folder)
 
 The WSDL file of the SOAP api can be found in .../.../
 
