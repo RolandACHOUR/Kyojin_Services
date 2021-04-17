@@ -35,3 +35,113 @@ Multiple opérations can be done with on each client :
 11. Quit the client
 
 This menu is displayed between each operation performed on each client.
+An example of an interaction with the client : 
+```
+Que voulez-vous faire ?
+ 1. Ajouter un chercheur
+ 2. Ajouter un laboratoire
+ 3. Lier un chercheur à un laboratoire
+ 4. Chercher un laboratoire par nom
+ 5. Afficher tous les chercheurs
+ 6. Afficher tous les laboratoires
+ 7. Chercher un chercheur par ID
+ 8. Afficher les chercheurs par laboratoire
+ 9. Supprimer un chercheur par ID
+10. Supprimer un laboratoire par nom
+11. Quitter
+1
+Nom du chercheur : 
+Clipet
+Prénom : 
+Julien
+Adding Julien Clipet... 201
+OK.
+Chercheur ajouté! ID : 1
+Que voulez-vous faire ?
+ 1. Ajouter un chercheur
+ 2. Ajouter un laboratoire
+ 3. Lier un chercheur à un laboratoire
+ 4. Chercher un laboratoire par nom
+ 5. Afficher tous les chercheurs
+ 6. Afficher tous les laboratoires
+ 7. Chercher un chercheur par ID
+ 8. Afficher les chercheurs par laboratoire
+ 9. Supprimer un chercheur par ID
+10. Supprimer un laboratoire par nom
+11. Quitter
+1
+Nom du chercheur : 
+Achour
+Prénom : 
+Roland
+Adding Roland Achour... 201
+OK.
+Chercheur ajouté! ID : 2
+Que voulez-vous faire ?
+ 1. Ajouter un chercheur
+ 2. Ajouter un laboratoire
+ 3. Lier un chercheur à un laboratoire
+ 4. Chercher un laboratoire par nom
+ 5. Afficher tous les chercheurs
+ 6. Afficher tous les laboratoires
+ 7. Chercher un chercheur par ID
+ 8. Afficher les chercheurs par laboratoire
+ 9. Supprimer un chercheur par ID
+10. Supprimer un laboratoire par nom
+11. Quitter
+2
+Nom du laboratoire : 
+Pontoise
+Adding Pontoise... OK.
+Que voulez-vous faire ?
+ 1. Ajouter un chercheur
+ 2. Ajouter un laboratoire
+ 3. Lier un chercheur à un laboratoire
+ 4. Chercher un laboratoire par nom
+ 5. Afficher tous les chercheurs
+ 6. Afficher tous les laboratoires
+ 7. Chercher un chercheur par ID
+ 8. Afficher les chercheurs par laboratoire
+ 9. Supprimer un chercheur par ID
+10. Supprimer un laboratoire par nom
+11. Quitter
+5
+[ID : 1 | Nom : Julien Clipet, ID : 2 | Nom : Roland Achour]
+Que voulez-vous faire ?
+ 1. Ajouter un chercheur
+ 2. Ajouter un laboratoire
+ 3. Lier un chercheur à un laboratoire
+ 4. Chercher un laboratoire par nom
+ 5. Afficher tous les chercheurs
+ 6. Afficher tous les laboratoires
+ 7. Chercher un chercheur par ID
+ 8. Afficher les chercheurs par laboratoire
+ 9. Supprimer un chercheur par ID
+10. Supprimer un laboratoire par nom
+11. Quitter
+3
+Nom du laboartoire : 
+Pontoise
+ID du chercheur : 
+2
+Linking researcher 2 to laboratory Pontoise
+Researcher linked to laboratory !
+
+true
+Que voulez-vous faire ?
+ 1. Ajouter un chercheur
+ 2. Ajouter un laboratoire
+ 3. Lier un chercheur à un laboratoire
+ 4. Chercher un laboratoire par nom
+ 5. Afficher tous les chercheurs
+ 6. Afficher tous les laboratoires
+ 7. Chercher un chercheur par ID
+ 8. Afficher les chercheurs par laboratoire
+ 9. Supprimer un chercheur par ID
+10. Supprimer un laboratoire par nom
+11. Quitter
+8
+Retrieving all researchers with their laboratory...
+[ID: 2 | Nom : Roland Achour | Laboratoire : Pontoise]
+```
+
